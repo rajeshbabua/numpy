@@ -79,3 +79,29 @@ d.mean(axis =1)
 d.cumsum(1)
 h.cumsum(1)
 h.argmax(1)##########indices of max
+##################################################################np.where() function
+x= np.array([1,2,3,4,5])
+y = np.array([6,5,4,9,8])
+z= np.array([True,False,True,False, False])
+
+#res = [(r if j else a)
+#      for r,a,j in zip(x,y,z)]
+
+#res = np.where(z,x,y)
+#res
+
+
+
+
+ary = np.random.randn(4,4)
+ary
+np.where(ary>0,2,-2)
+
+
+re=[]
+np.where(1>2 & 2<1,0,
+        np.where(1>2,1,
+                np.where(2<1,2,3))) 
+list(re)
+
+
